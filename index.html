@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>The Paper Seal Studio | Photography Re-imagined</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #F9F7F2;
+            --text-main: #1A2B3C;
+            --accent: #4A6E7D;
+            --transition: all 0.4s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png');
+        }
+
+        .container {
+            max-width: 650px;
+            padding: 3rem 1.5rem;
+            opacity: 0;
+            transform: translateY(15px);
+            animation: fadeIn 1s forwards ease-out;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            margin-bottom: 2.5rem;
+            object-fit: cover;
+            /* box-shadow sutil para que el logo "viva" en el papel */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+            border-radius: 4px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-style: italic;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+        }
+
+        .status-message {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            padding: 0 1rem;
+            font-weight: 400;
+            border-left: 1px solid var(--text-main);
+            border-right: 1px solid var(--text-main);
+            display: inline-block;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            align-items: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 1.1rem 2.5rem;
+            width: 100%;
+            max-width: 320px;
+            border: 1px solid var(--text-main);
+            color: var(--text-main);
+            transition: var(--transition);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .btn:hover {
+            background-color: var(--text-main);
+            color: var(--bg-color);
+        }
+
+        .btn-whatsapp {
+            border-color: #25D366;
+            color: #128C7E;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #25D366;
+            border-color: #25D366;
+            color: white;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .footer a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .logo {
+                width: 110px;
+                height: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="The Paper Seal Studio" class="logo">
+
+        <h1>Sussex Photography, Re-imagined.</h1>
+        <p class="tagline">Fine art prints captured by the lens, refined by the studio.</p>
+
+        <p class="status-message">
+            Our digital portal is currently being curated. <br>
+            We look forward to welcoming you soon.
+        </p>
+
+        <div class="links">
+            <a href="https://instagram.com/TU_USUARIO" target="_blank" class="btn">Follow us on Instagram</a>
+            <a href="https://wa.me/+447375976387" target="_blank" class="btn btn-whatsapp">Chat with us directly</a>
+        </div>
+
+        <div class="footer">
+            <a href="mailto:hello@paperseal.uk">hello@paperseal.uk</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
